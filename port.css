@@ -1,0 +1,86 @@
+body {
+    background: rgb(10, 10, 10);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 80px;
+}
+
+
+.perfil {
+    background: rgb(204, 204, 204);
+    border-radius: 75px;
+    width: 300px;
+    height: 300px;  
+    padding: 50px;
+    text-align: center;
+    border: 2px solid rgb(10, 10, 10);
+    box-shadow: 0px 8px 15px rgb(0, 0, 0);
+    transition: box-shadow 0.3s ease;
+}
+
+
+.perfil:hover {
+    box-shadow: 0px 8px 15px rgb(255, 253, 253);
+}
+
+
+.perfil img {
+    border-radius: 50%;
+    box-shadow: none;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+.perfil p {
+    color: rgb(7, 3, 3);
+}
+
+
+.pe {
+    color: white;
+    margin-left: 20px;
+    max-width: 600px;
+    text-align: justify;
+}
+
+
+.perfil a {
+    text-decoration: none;
+}
+
+
+.botoes-caixa-preta {
+    background-color: (rgb(20, 20, 20));
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+.botoes-caixa-preta a {
+    color: rgb(201, 185, 185);
+    background-color: #0f3d6b;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 16px;              
+    box-shadow: 0,3 ease;
+}
+
+
+.botoes-caixa-preta a:hover {
+    background-color: #222222;
+}
+
+th, td, table {
+    border: solid 1px whitesmoke;
+    border-collapse: collapse;
+}

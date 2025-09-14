@@ -1,24 +1,31 @@
 body {
     background: rgb(10, 10, 10);
     display: flex;
-    justify-content: center;
-    text-align: center;
+    justify-content: flex-start; /* aalinha à esquerda */
+    align-items: flex-start;     /* mantém o conteúdo no topo */
+    text-align: left;
     font-family: Arial, sans-serif;
-    margin: 80px;
+   padding: 20px; /* cria um espaçamento interno da página */
+   gap: 20px; /* espaço entre os filhos do body */
 }
 
 
 .perfil {
     background: rgb(204, 204, 204);
-    border-radius: 75px;
-    width: 300px;
-    height: 300px;  
-    padding: 50px;
+    border-radius: 20px;
+    width: 280px;
+    padding: 20px;
     text-align: center;
     border: 2px solid rgb(10, 10, 10);
     box-shadow: 0px 8px 15px rgb(0, 0, 0);
     transition: box-shadow 0.3s ease;
+
+    /* >>> ESSAS LINHAS AQUI FAZEM O PERFIL FICAR FIXO <<< */
+    position: fixed;
+    top: 35px;    /* distância do topo */
+    right: 35px;  /* distância da direita */
 }
+
 
 
 .perfil:hover {
@@ -41,10 +48,10 @@ body {
 
 
 .pe {
-    color: white;
-    margin-left: 20px;
-    max-width: 600px;
+   color: white;
     text-align: justify;
+  max-width: 900px;     /* controla largura do texto */
+  margin-right: 340px; /* reserva espaço para o .perfil (ajuste se mudar largura) */
 }
 
 
@@ -83,4 +90,48 @@ body {
 th, td, table {
     border: solid 1px whitesmoke;
     border-collapse: collapse;
+}
+nav{
+    background-color: rgba(40, 0, 187, 0.568);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+nav li {
+   color: rgb(0, 28, 240);
+   float: left;
+    margin-right: 15px;
+    list-style-type: none; /* remove os marcadores padrão */
+}
+nav li a {
+    font-weight: bold;
+    margin-right: 15px;
+
+    /* abaixo sobre o botao dos links */
+    display: inline-block;
+    background-color: #214f8b; /* cor do botão */
+    color: rgb(161, 184, 226);              /* cor do texto */
+    padding: 8px 16px;         /* altura e largura do botão */
+    border-radius: 8px;        /* cantos arredondados */
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+
+nav li a:hover { /* muda a cor ao clicar no botao*/
+    background-color: #222222;
+}
+
+
+nav ul {
+    margin-right: 15px;
+   padding: 10px;
+
+}
+h2 {
+    color: rgb(130, 132, 245);
+}
+h1 {
+    color: rgb(28, 4, 245);
 }
